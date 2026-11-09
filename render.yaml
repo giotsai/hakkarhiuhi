@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dapu-hakka-voice-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOHAKKA_API_TOKEN
+        sync: false

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8"><title>講客｜大埔腔練習</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/" aria-label="講客首頁"><span class="brand-mark">客</span>講客</a><span class="tag">大埔腔・聽講練習</span></header>
+  <main>
+    <section class="intro"><div class="eyebrow">HAKKA SPEAKING PRACTICE</div><h1>聽一句，講一句。<br><span>客話就從生活開始。</span></h1><p>聽大埔腔示範，跟著念出來，看看自己講得有幾準。</p></section>
+    <section class="game-card" aria-live="polite">
+      <div class="card-head"><div><span id="level" class="level">初級</span><span id="count" class="count">第 1 題</span></div><span class="dialect">● 大埔腔</span></div>
+      <div class="progress"><span id="progress"></span></div>
+      <div class="prompt-area"><div class="prompt-label">今晡日个題目</div><div id="prompt" class="prompt">載入中…</div><div id="meaning" class="meaning"></div></div>
+      <div class="actions"><button id="listen" class="button button-soft"><span class="button-icon">♫</span>聽發音</button><button id="record" class="button button-primary"><span class="button-icon">●</span>開始錄音</button><button id="next" class="button button-outline">換一題　↗</button></div>
+      <div id="status" class="status" role="status">先聽示範，再按下開始錄音。</div>
+      <div id="result" class="result hidden"><div class="score-wrap"><div id="score" class="score">0<small>分</small></div><div><strong id="feedback">辨識結果</strong><p id="transcript"></p></div></div><div class="expected"><span>題目原文</span><p id="expected"></p></div></div>
+      <div class="card-foot"><span>🎙️ 錄音只用於本次辨識</span><span id="rounds">已完成 0 題</span></div>
+    </section>
+    <p class="tip">小提醒：找個安靜的所在，對著麥克風清楚講一擺。</p>
+  </main>
+  <footer>用聲音，逐句學大埔腔 <span>✳</span></footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
